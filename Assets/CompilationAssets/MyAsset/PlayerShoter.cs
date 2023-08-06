@@ -14,7 +14,7 @@ public class PlayerShoter : MonoBehaviour
     private float _cullDown;
 
 
-    private PlayerGun _playerGun;
+    [SerializeField]  private PlayerGun _playerGun;
 
     private void Start()
     {

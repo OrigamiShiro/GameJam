@@ -9,4 +9,13 @@ public class PlayerGun : MonoBehaviour
     public float _cullDown;
     public GameObject _bullet;
     public Transform _transformShotPoint;
+
+    private void Start()
+    {
+        PlayerShoter ps = GetComponentInParent<PlayerShoter>();
+        if (ps)
+        {
+            ps.UpdateWeapon();
+        }
+    }
 }

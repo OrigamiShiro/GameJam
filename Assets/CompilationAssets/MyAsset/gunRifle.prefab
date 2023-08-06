@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _forseShot: 5
-  _damage: 29
-  _cullDown: 10.64
+  _damage: 50
+  _cullDown: 1
   _bullet: {fileID: 6279909071444405090, guid: 5131e654a68853943ad6f08c439e4d19, type: 3}
   _transformShotPoint: {fileID: 4017405665039091189}
 --- !u!1 &4017405665039091190

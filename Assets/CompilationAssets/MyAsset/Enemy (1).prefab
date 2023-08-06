@@ -503,5 +503,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 5
-  _damage: 50
-  _giveHappy: 10
+  _damage: 30
+  _giveHappy: 30
