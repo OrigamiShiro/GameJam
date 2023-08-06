@@ -89,6 +89,7 @@ namespace GameJam
         public static async void PlayMusic(string path)
         {
             var sound = await SoundInstance.GetSoundInstance(path);
+            Stop();
             _music.clip = sound.Sound;
             _music.volume = sound.Volume;
             Play();
@@ -99,6 +100,12 @@ namespace GameJam
         
         public static void Pause() =>
             _music.Pause();
+
+        public static void Stop()
+        {
+            _music.Stop();
+            _music.clip = null;
+        }
 
         public static void Mute() =>
             _music.mute = true;
