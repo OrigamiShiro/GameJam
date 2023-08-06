@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b722f212f1d148843991f58f7016e819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _forseShot: 10
-  _damage: 3
-  _cullDown: 1
+  _forseShot: 5
+  _damage: 25
+  _cullDown: 0.5
   _bullet: {fileID: 8955794494551105652, guid: d0d4d5f10501d9d45b085adc6339ce7e, type: 3}
   _transformShotPoint: {fileID: 410023923705837550}

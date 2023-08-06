@@ -15,5 +15,29 @@ public class PlayerLive : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if (_health > _maxHealth)
+        {
+            _health = _maxHealth;
+        }
+        
+        
+        
+        if (_happy > _maxHappy)
+        {
+            _happy = _maxHappy; // win
+        }
+        else if (_happy <= 0)
+        {
+            _happy = 0;
+            _health -= Time.deltaTime * 4;
+        }
+        else
+        {
+            _happy -= Time.deltaTime * 6;
+        }
+
+
     }
+
+    
 }

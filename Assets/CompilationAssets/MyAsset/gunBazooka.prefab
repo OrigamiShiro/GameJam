@@ -96,9 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b722f212f1d148843991f58f7016e819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _forseShot: 5
+  _forseShot: 6
   _damage: 1
-  _cullDown: 0.37
+  _cullDown: 0.02
   _bullet: {fileID: 8758317704881638201, guid: d6cc79cd3b2f5df4e88ea0bec8f66e32, type: 3}
   _transformShotPoint: {fileID: 3553856968790008447}
 --- !u!1 &3553856968790008444

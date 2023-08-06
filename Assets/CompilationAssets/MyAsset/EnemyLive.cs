@@ -16,6 +16,12 @@ public class EnemyLive : MonoBehaviour
             Destroy(collision.gameObject);
             if (_health <= 0)
             {
+                PlayerLive pl = FindObjectOfType<PlayerLive>();
+                if (pl)
+                {
+                    pl._health += _damage * 2;
+                    pl._happy -= _giveHappy / 5;
+                }
                 Death();
             }
         }
