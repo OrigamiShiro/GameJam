@@ -19,13 +19,11 @@ namespace Platformer
 
         private Rigidbody2D rigidbody;
         private Animator animator;
-        private GameManager gameManager;
 
         void Start()
         {
             rigidbody = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
-            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
 
         private void FixedUpdate()
@@ -90,11 +88,6 @@ namespace Platformer
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.gameObject.tag == "Coin")
-            {
-                gameManager.coinsCounter += 1;
-                Destroy(other.gameObject);
-            }
         }
     }
 }
